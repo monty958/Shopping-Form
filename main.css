@@ -1,0 +1,101 @@
+body {
+    justify-content: center;
+}
+
+.wrapper {
+    margin-top: 5%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: coral;
+    box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    animation: slideUp 2000ms ease;
+}
+.container {
+    width: 65%;
+    padding: 5% 10%;
+}
+h1 {
+    align-self: center;
+}
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form input[type=color],
+select
+{
+    width: 100%;
+    min-height: 25px;
+    border: 0;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    color: maroon;
+    border-radius: 4px;
+}
+form label {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: maroon;
+}
+form h1 {
+    font-size: 24px;
+    line-height: 10px;
+    color: white;
+    letter-spacing: 1px;
+}
+.name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+.name div {
+    width: 45%;
+}
+.addressInfo {
+    display: flex;
+    justify-content: space-between;
+}
+.addressInfo div {
+    width: 30%;
+}
+.fabricCont {
+    justify-content: space-between;
+    width: 100%;
+}
+.fabricCont div {
+    width: 45%;
+}
+
+.clothingOption {
+    justify-content: space-between;
+    width: 100%;
+}
+.clothingOption div {
+    width: 45%;
+}
+button {
+    background-color: #4CAF50;
+    display: flex;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button {
+    padding-top: 1em;
+    justify-content: space-between;
+    width: 100%;
+}
