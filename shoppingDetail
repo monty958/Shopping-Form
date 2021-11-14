@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Shopping Details">
+    <meta name="keywords" content="tag, shopping, sale">
+    <meta name="author" content="Martin">
+    <link href="main.css" rel="stylesheet">
+
+    <script>
+        function showVal(newVal) {
+            document.getElementById('count').innerHTML = newVal;
+        }
+    </script>
+    <title>Shopping Detail</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form action="">
+                <h1>Shopping Details</h1>
+                <div class="name">
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" pattern="^(\w\w+)\s(\w+)$">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" pattern="^(\w\w+)\s(\w+)$">
+                    </div>
+                </div>
+                <div class="email">
+                    <label for="myEmail">E-mail Address</label>
+                    <input type="email" name="myEmail">
+                </div>
+                <div class="phoneNumber">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" name="phoneNumber" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
+                </div>
+                <div class="clothingOption">
+                    <div>
+                        <label for="category">Clothing Category</label>
+                        <select id="category">
+                            <option>Sweaters</option>
+                            <option>Blouses</option>
+                            <option>Pants</option>
+                            <option>Dresses</option>
+                            <option>Jackets</option>
+                        </select>
+                    </div>
+                    <div class="colorCont">
+                        <label for="color">Color</label>
+                        <input type="radio" name="blue"> Blue
+                        <input type="radio" name="red"> Red
+                        <input type="radio" name="black"> Black
+                        <input type="radio" name="white"> White
+                        <input type="radio" name="green"> Green
+
+                    </div>
+                    <div>
+                        <label for="sizes">Size</label>
+                        <input type="range" id="size" min="2" max="14" step="2" oninput="showVal(this.value)" onchange="showVal(this.value"><span id="count">6</span>
+                    </div>
+                    <div class="fabricCont">
+                        <label for="fabric">Fabric</label>
+                        <select id="fabric">
+                            <option>Cotton</option>
+                            <option>Velvet</option>
+                            <option>Linen</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="street">
+                    <label for="streetName">Street</label>
+                    <input type="text" name="streetName">
+                </div>
+                <div class="addressInfo">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city">
+                    </div>
+                    <div>
+                        <label for="province">Province</label>
+                        <input type="text" name="province">
+                    </div>
+                    <div>
+                        <label for="zipCode">Zip Code</label>
+                        <input type="text" name="zipCode" pattern="^([A-Za-z]\d[A-Za-z][-]?\d[A-Za-z]\d)">
+                    </div>
+                </div>
+                <div class="shippingMode">
+                    <label for="shipping">Shipping Mode</label>
+                    <select id="shipping">
+                        <option>Urgent</option>
+                        <option>Regular</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <button type="submit">Submit Orde</button>
+                    <button type="reset">Clear Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
